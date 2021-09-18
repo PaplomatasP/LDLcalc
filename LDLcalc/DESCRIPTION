@@ -1,0 +1,26 @@
+Package: LDLcalc
+Title: Calculate And Predict LDL Values (One Line, Title Case)
+Version: 1.0.0
+Authors@R: 
+    person(given = "Petros",
+           family = "Paplomatas",
+           role = c("cre"),
+           email = "p.paplomatas@hotmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The LDLpackage offers a wide variaty of ways to calculate (though equations) or predict (using 9 Machine Learning methods as well as a stack algorithm combination of them all) the LDL values of patients based on the values of three other metrics (TC,HD,TG).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+	data.table,
+	caret,
+	caretEnsemble,
+	lares,
+	corrplot,
+	RColorBrewer,
+	lattice,
+	resample
+Depends: 
+    R (>= 2.10)
