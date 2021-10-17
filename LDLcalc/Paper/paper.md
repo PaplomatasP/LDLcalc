@@ -6,7 +6,6 @@ author:
 - affiliation: 1
   name: Kostas Anagnostopoulos^[Last author]
 date: "17 October 2021"
-output: rticles::joss_article
 bibliography: paper.bib
 tags:
 - R
