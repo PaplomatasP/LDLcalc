@@ -48,7 +48,7 @@ To install LDLcalc use :
 
 ```diff
 
- install.packages("LDLcalc")
+ ! install.packages("LDLcalc")
 ```
 
 
@@ -58,7 +58,7 @@ To install LDLcalc use :
 #> Calculate the LDL Cholesterol through the equation of Martin
 
 ```diff
- LDL_eq(170.5,35.12,175,"Martin360")
+! LDL_eq(170.5,35.12,175,"Martin360")
 
 #> [1] 106
 ```
@@ -69,7 +69,7 @@ To install LDLcalc use :
 
 #> Train single ML model
 ```diff
- model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
+! model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 ```
 
 ![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalculation/blob/main/LDLcalc/Paper/ModelPlot.png?raw=true)
@@ -79,7 +79,7 @@ To install LDLcalc use :
 ***Prediction using the above model.***
 
 ```diff
- LDL_ML_predict(model,data.table(CHOL=170.5,HDL=35.12,TG=175))
+! LDL_ML_predict(model,data.table(CHOL=170.5,HDL=35.12,TG=175))
 
 
 #> 107.5539
