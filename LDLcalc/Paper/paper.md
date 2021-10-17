@@ -44,7 +44,7 @@ With this package the low density lipoprotein (LDL) can be estimated from total 
 
 # Examples  
 
-To install LDLcalc use :
+To install ``LDLcalc`` use :
 
 ```diff
 
