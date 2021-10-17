@@ -48,7 +48,7 @@ To install LDLcalc use :
 
 ```diff
 
- ! install.packages("LDLcalc")
+! install.packages("LDLcalc")
 ```
 
 
