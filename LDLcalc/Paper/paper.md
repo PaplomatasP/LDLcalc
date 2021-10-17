@@ -18,6 +18,9 @@ tags:
 - Machine learning
 - Prediction
 - LDL
+csl: apa.csl
+journal: JOSS
+link-citations: yes
 ---
 
 
