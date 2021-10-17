@@ -3,8 +3,10 @@ title: 'LDLcalc: Calculate and Predict Low Density Lipoprotein Values'
 author:
 - affiliation: 1
   name: Petros Paplomatas^[First author]
+  orcid: 0000-0002-8895-3206
 - affiliation: 1
   name: Kostas Anagnostopoulos^[Last author]
+  orcid: 0000-0002-4287-4801
 date: "17 October 2021"
 affiliation:
 - index: 1
