@@ -1,17 +1,15 @@
 ---
-title: 'LDLcacl: Calculate and Predict Low Density Lipoprotein Values'
+title: 'LDLcalc: Calculate and Predict Low Density Lipoprotein Values'
 author:
-- name: Petros Paplomatas^[First author]
-  affiliation: 1
-- name: Kostas Anagnostopoulos^[Last author]
-  affiliation: 1
-date: 17 October 2021
-output:
-     pdf_document:
-       latex_engine: xelatex
+- affiliation: 1
+  name: Petros Paplomatas^[First author]
+- affiliation: 1
+  name: Kostas Anagnostopoulos^[Last author]
+date: "17 October 2021"
 affiliation:
-- name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
-  index: 1
+- index: 1
+  name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
+output: rticles::joss_article
 bibliography: paper.bib
 tags:
 - R
