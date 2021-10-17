@@ -55,7 +55,7 @@ To install LDLcalc use :
 ***Calculate LDL using equations.***
 
 
-#Calculate the LDL Cholesterol through the equation of Martin
+#> Calculate the LDL Cholesterol through the equation of Martin
 
 ```diff
 ! LDL_eq(170.5,35.12,175,"Martin360")
@@ -67,7 +67,7 @@ To install LDLcalc use :
 ***Train a model with the chosen method.***
 
 
-#Train single ML model
+#> Train single ML model
 ```diff
 ! model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 ```
