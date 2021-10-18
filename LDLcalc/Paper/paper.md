@@ -5,7 +5,7 @@ author:
   name: Petros Paplomatas^[First author]
 - affiliation: 1
   name: Kostas Anagnostopoulos^[Last author]
-date: "17 October 2021"
+date: "19 October 2021"
 bibliography: paper.bib
 tags:
 - R
@@ -17,7 +17,6 @@ tags:
 affiliation:
 - index: 1
   name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
-
 ---
 
 
