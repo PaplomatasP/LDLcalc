@@ -1,5 +1,5 @@
 ---
-title: 'LDLcalc: Calculate and Predict Low Density Lipoprotein Values'
+title: '`LDLcalc`: Calculate and Predict Low Density Lipoprotein Values'
 author:
 - affiliation: 1
   name: Petros Paplomatas^[First author]
@@ -17,19 +17,17 @@ tags:
 affiliation:
 - index: 1
   name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
-csl: apa.csl
-journal: JOSS
-link-citations: yes
+
 ---
 
 
 
 # Summary
 
-As defined both in the European Society of Cardiology/European Atherosclerosis Society 2019 (ESC), as well as the American National Cholesterol Education Program III (NCEP) guidelines, LDL (Low density lipoprotein cholesterol) is a critical risk factor for atherosclerotic vascular disease or cardiovascular disease (CVD). In the laboratory the ideal method to calculate LDL is through ultracentrifugation but this is not feasible for routine laboratory deployment. Another method is to determine LDL directly by utilising enzymatic assays. This has two disadvantages: the high cost and the lack of standardisation among manufacturers. For the above reasons many laboratories choose the third option, to calculate the LDL through equations. The Friedewald equation (Fukuyama et al., 2008) is the most widely adopted, which calculates LDL as $LDL = CHOL - HDL - (TG/5)$, with good approximation when LDL<400 mg/dl (4.52 mmol/L). Another equation is that of Martin (Cartier et al., 2020), which calculates LDL utilising classification tables of different sizes according to the concentration of non HDL cholesterol and TG creating an adjustable novel factor for more accurate results.
+As defined both in the European Society of Cardiology/European Atherosclerosis Society 2019 (ESC), as well as the American National Cholesterol Education Program III (NCEP) guidelines, LDL (Low density lipoprotein cholesterol) is a critical risk factor for atherosclerotic vascular disease or cardiovascular disease (CVD). In the laboratory the ideal method to calculate LDL is through ultracentrifugation but this is not feasible for routine laboratory deployment. Another method is to determine LDL directly by utilising enzymatic assays. This has two disadvantages: high cost and lack of standardisation among manufacturers. For the above reasons many laboratories choose the third option, to calculate the LDL through equations. The Friedewald equation (Friedewald et al., 1972), is the most widely adopted, which calculates LDL as $LDL = CHOL - HDL - (TG/5)$, with good approximation when LDL<400 mg/dl (4.52 mmol/L). Another equation is that of Martin (Martin et al., 2013),which calculates LDL utilising classification tables of different sizes according to the concentration of non HDL cholesterol and TG creating an adjustable novel factor for more accurate results.
 Machine learning (ML) methods have been increasingly used in the medical sector. Such methods could be used for the estimation of LDL Cholesterol. Machine learning can offer good results if a big data set is used for training of the model.
-This R package offers a wide variety of ways to calculate (through equations) or predict (using 9 Machine learning methods as well as a stack algorithm combination of them all) the Low Density Lipoprotein values of patients based on the values of three other metrics as Total Cholesterol , Triglyceride and High Density Lipoprotein.
-To assess LDLcalc in R we have created the package LDLcalc that is available on  [Cran](https://cran.r-project.org/web/packages/LDLcalc/index.html) and  [Github](https://github.com/PaplomatasP/LDLcalculation/tree/main/LDLcalc).
+This R package offers a wide variety of ways to calculate (through equations) or train ML models (using 9 Machine learning methods as well as a stack algorithm combination of them all) and then use them to estimate Low Density Lipoprotein values of patients based on the values of three other metrics (Total Cholesterol , Triglyceride and High Density Lipoprotein).
+To assess ``LDLcalc`` in R we have created the package LDLcalc that is available on  [Cran](https://cran.r-project.org/web/packages/LDLcalc/index.html) and  [Github](https://github.com/PaplomatasP/LDLcalculation/tree/main/LDLcalc).
 
 # Statement of need
 
@@ -39,7 +37,6 @@ With this package the low density lipoprotein (LDL) can be estimated from total 
 
 
 \pagebreak
-
 
 
 # Examples  
@@ -67,7 +64,7 @@ To install ``LDLcalc`` use :
 ***Train a model with the chosen method.***
 
 
-#> Train single ML model
+#> Train single ML model with the lm method.
 ```diff
 ! model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 ```
