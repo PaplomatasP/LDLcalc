@@ -88,7 +88,6 @@ Corr_Plot(listDaten)
 To install ``LDLcalc`` use :
 
 ```diff
-
 ! install.packages("LDLcalc")
 ```
 
