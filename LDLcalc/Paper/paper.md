@@ -76,7 +76,7 @@ LDLallEq(TC, HDL, TG)
 **Usage**\
 Corr_Plot(listDaten)\
 
-Package allows for a pre-trained model which is called **model**, as well a **sample data** , thus enabling the user to have a first experience with our  R package.
+This R Package allows for a pre-trained model which is called **model**, as well a **sample data** , thus enabling the user to have a first experience with our  R package.
 
 
 \pagebreak
