@@ -38,7 +38,7 @@ With this package the low density lipoprotein (LDL) can be estimated from total 
 
 # Function and Usage
 
-```
+```diff
 **LDL_ML_Main** function creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Preset to TRUE. 
 ``Usage``
 LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE) 
