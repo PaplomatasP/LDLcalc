@@ -39,11 +39,11 @@ With this package the low density lipoprotein (LDL) can be estimated from total 
 # Function and Usage
 
 **LDL_ML_Main function** creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Preset to TRUE.\
-**Usage**\
-LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE) 
+**Usage:**\
+LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE) \
 
 **LDL_ML_Main_StackingAlgorithm** function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a **ReportMultiPlot** and **ComparisonPlot**. Preset to TRUE.\
-**Usage**\
+**Usage:**\
 LDL_ML_Main_StackingAlgorithm(
 DataCSV,
 partition,
@@ -52,7 +52,7 @@ ComparisonPlot = TRUE
 ) 
 
 **LDL_ML_Main_All_Models** function creates, trains, assessess and returns  all ML prediction models with the option for a **ReportMultiPlot** and **ComparisonPlot**.\
-**Usage**\
+**Usage:**\
 LDL_ML_Main_All_Models(
 DataCSV,
 partition,
@@ -61,11 +61,11 @@ ComparisonPlot = TRUE
 )
 
 **LDL_ML_predict** function predicts and returns prognosis, based on the previously trained model.\
-**Usage**\
+**Usage:**\
 LDL_ML_predict(model, data)
 
 **LDL_eq** function calculates and returns the LDL Value for any of the 12 different equations\
-**Usage**\
+**Usage:**\
 LDL_eq(TC, HDL, TG, EqMethod)
 
 **LDLallEq** function calculates and returns the LDL values computed with all of the 12 named equations.\
@@ -73,7 +73,7 @@ LDL_eq(TC, HDL, TG, EqMethod)
 LDLallEq(TC, HDL, TG)
 
 **Corr_Plot** function plots a correlation plot to depict the correlation between different columns of your data.\
-**Usage**\
+**Usage:**\
 Corr_Plot(listDaten)\
 
 This R Package allows for a pre-trained model which is called **model**, as well a **sample data** , thus enabling the user to have a first experience with our  R package.
