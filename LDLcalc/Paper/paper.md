@@ -1,5 +1,5 @@
 ---
-title: '`LDLcalc`: Calculate and Predict Low Density Lipoprotein Values'
+title: '`LDLcalc`: A R package for the calculation and prediction of Low Density Lipoprotein Values'
 author:
 - affiliation: 1
   name: Petros Paplomatas^[First author]
