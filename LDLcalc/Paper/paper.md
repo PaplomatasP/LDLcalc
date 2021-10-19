@@ -1,12 +1,5 @@
 ---
 title: '`LDLcalc`: A R package for the calculation and prediction of Low Density Lipoprotein Values'
-author:
-- affiliation: 1
-  name: Petros Paplomatas^[First author]
-- affiliation: 1
-  name: Kostas Anagnostopoulos^[Last author]
-date: "19 October 2021"
-bibliography: paper.bib
 tags:
 - R
 - Biochemistry
@@ -14,9 +7,16 @@ tags:
 - Machine learning
 - Prediction
 - LDL
+authors:
+- name: Petros Paplomatas^[First author]
+  affiliation: 1
+- name: Kostas Anagnostopoulos^[Last author]
+  affiliation: 1
 affiliation:
 - index: 1
   name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
+date: "19 October 2021"
+bibliography: paper.bib
 ---
 
 
@@ -120,7 +120,6 @@ To install ``LDLcalc`` use :
 
 ```diff
 ! LDL_ML_predict(model,data.table(CHOL=170.5,HDL=35.12,TG=175))
-
 
 #> 107.5539
 ```
