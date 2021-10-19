@@ -76,7 +76,7 @@ LDLallEq(TC, HDL, TG)
 
 **Corr_Plot** function plots a correlation plot to depict the correlation between different columns of your data.\
 **Usage:**\
-Corr_Plot(listDaten)\
+Corr_Plot(listDaten)
 
 
 
