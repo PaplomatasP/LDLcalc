@@ -38,7 +38,7 @@ With this package the low density lipoprotein (LDL) can be estimated from total 
 
 # Function and Usage
 
-This R Package allows for a pre-trained model which is called **model**, as well a **sample data** , thus enabling the user to have a first experience with our  R package.\
+This R Package allows for a pre-trained model which is called **model**, as well a **sample data** , thus enabling the user to have a first experience with our  R package.
 
 **LDL_ML_Main function** creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Preset to TRUE.\
 **Usage:**\
