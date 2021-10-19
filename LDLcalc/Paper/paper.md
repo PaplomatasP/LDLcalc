@@ -13,8 +13,8 @@ authors:
 - name: Kostas Anagnostopoulos^[Last author]
   affiliation: 1
 affiliation:
-- index: 1
-  name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
+- name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
+  index: 1
 date: "19 October 2021"
 bibliography: paper.bib
 ---
