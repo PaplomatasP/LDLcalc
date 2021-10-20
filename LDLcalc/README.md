@@ -2,6 +2,8 @@
 
 A list of dependencies to install are : data.table, caret, caretEnsemble, lares, corrplot,RColorBrewer, lattice, resample, glmnet, earth, kernlab, gbm,Cubist, randomForest
 
+TestdataScript(https://github.com/PaplomatasP/LDLcalculation/tree/main/LDLcalc/tests)
+
 # Statement of need
 
 There is not an R software package currently available that allows to calculate and predict LDL Cholesterol through equation and machine learning.
