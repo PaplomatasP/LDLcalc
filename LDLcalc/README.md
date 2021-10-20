@@ -10,3 +10,7 @@ The ``LDlcalc`` package offer a wide variety of ways to calculate or predict the
 
 
 A full documentation is available here [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf).
+
+Instalation and examples are available either on [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf) or on [LDLcalctutorial](https://sciencesandresearch.com/wp-content/uploads/2021/10/LDLcalcTutorial-1.pdf).
+
+Feel free to contact us at [Petros Paplomatas](p.paplomatas@hotmail.com) or [Kostas Anagnostopoulos](kanagno@gmail.com).
