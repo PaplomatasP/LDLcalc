@@ -31,7 +31,7 @@ To assess ``LDLcalc`` in R we have created the package LDLcalc that is available
 # Statement of need
 
 Cholesterol, and in particular LDL cholesterol, is responsible for many important diseases such as coronary artery disease, peripheral artery disease, and heart disease. In today`s modern society, this phenomenon has become a large issue for the health of adults and children, mainly due to diet.
-When not determined directly, either through ultracentrifugation or enzymatic methods, LDL can be calculated using equations. It this package, several equations have been implemented. (Atabi and Mohammadi, 2020),(Karkhaneh et al., 2019),(Molavi et al., 2020)
+When not determined directly, either through ultracentrifugation or enzymatic methods, LDL can be calculated using equations. It this package, several equations have been implemented. (Piani et al., 2021),(Atabi and Mohammadi, 2020),(Karkhaneh et al., 2019),(Molavi et al., 2020).
 With this package the low density lipoprotein (LDL) can be estimated from total cholesterol, HDL and triglycerides either using the above equations or machine learning models. When the direct determination of LDL Cholesterol is not available, equations or ML methods can be very good substitute.  
 
 \pagebreak
