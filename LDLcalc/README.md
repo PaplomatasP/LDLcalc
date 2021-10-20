@@ -1,4 +1,4 @@
-''LDLcalc'' is an R package for calculation and prediction of LDL Cholesterol through 12 different equations and 10 different machine learning method.
+[LDLcalc](https://cran.r-project.org/web/packages/LDLcalc/index.html) is an R package for calculation and prediction of LDL Cholesterol through 12 different equations and 10 different machine learning method.
 
 A list of dependencies to install are : data.table, caret, caretEnsemble, lares, corrplot,RColorBrewer, lattice, resample, glmnet, earth, kernlab, gbm,Cubist, randomForest
 
