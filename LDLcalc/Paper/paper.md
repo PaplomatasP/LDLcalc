@@ -66,7 +66,7 @@ ComparisonPlot = TRUE
 **Usage:**\
 LDL_ML_predict(model, data)
 
-**LDL_eq** function calculates and returns the LDL Value for any of the 12 different equations\
+**LDL_eq** function calculates and returns the LDL Value for any of the 12 equations\
 **Usage:**\
 LDL_eq(TC, HDL, TG, EqMethod)
 
