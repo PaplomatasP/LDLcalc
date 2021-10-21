@@ -9,8 +9,10 @@ tags:
 - LDL
 authors:
 - name: Petros Paplomatas^[First author]
+  orcid: 0000-0002-2691-2767
   affiliation: 1
 - name: Kostas Anagnostopoulos^[Last author]
+  orcid: 0000-0002-3985-9176
   affiliation: 1
 affiliations:
 - name: Laboratory of Biochemistry, Department of Medicine, Democritus University of Thrace, Alexandroupolis, Greece
