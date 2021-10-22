@@ -1,5 +1,5 @@
 ---
-title: '`LDLcalc`: A R package for the calculation and prediction of Low Density Lipoprotein Values'
+title: '`LDLcalc`: An R package for the calculation and prediction of Low Density Lipoprotein Values'
 tags:
 - R
 - Biochemistry
