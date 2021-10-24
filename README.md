@@ -37,14 +37,18 @@ ls("package:LDLcalc")
 [7] "LDLallEq" "model" 
 [9] "SampleData
 ```
-```
 **Usage and Example**
+```
 ``LDL_eq`` Calculates and returns the LDL Value for any of the 12 different equations
-**Description:**
+
+Description:
 This function calculates and returns the LDL value computed from any of the 12 named equations.
-**Usage:**
+
+Usage:
 LDL_eq(TC, HDL, TG, EqMethod)
-**Arguments:**
+
+Arguments:
+
 **TC:** The TC (Total Cholesterol) value.
 **HDL:** The HDL (High-density lipoprotein- cholesterol) value.
 **TG:** The TG (Triglyceride) value.
