@@ -56,7 +56,8 @@ ComparisonPlot:
 A boolean that allows the user to select whether the LDL_ML_Main_All_Models
 function will plot a comparison plot, relating different stats on the newly created
 models. Preset to TRUE
-
+```
+```
 LDL_ML_Main function creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Default to TRUE.\
 Usage:
 LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE)
