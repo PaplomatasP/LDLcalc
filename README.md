@@ -40,13 +40,18 @@ ls("package:LDLcalc")
 **Usage and Example**
 
 This R Package allows for a pre-trained model which is called **model**, as well a **sample data**, thus enabling the user to have a first experience with our  R package.
-
-**LDL_ML_Main** function creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Default to TRUE.\
-**Usage:**\
+```
+LDL_ML_Main function creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Default to TRUE.\
+Usage:
 LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE)
+Example:
+model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
+Results:
+It initializes and returns the ML prediction model with a [ReportMultiPlot](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png)
 
-**LDL_ML_Main_StackingAlgorithm** function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``. Default to TRUE.\
-**Usage:**\
+
+LDL_ML_Main_StackingAlgorithm function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``. Default to TRUE.
+Usage:
 LDL_ML_Main_StackingAlgorithm(
 DataCSV,
 partition,
@@ -54,8 +59,8 @@ ReportMultiPlot = TRUE,
 ComparisonPlot = TRUE
 ) 
 
-**LDL_ML_Main_All_Models** function creates, trains, assessess and returns  all ML prediction models with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``.\
-**Usage:**\
+LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``.\
+Usage:
 LDL_ML_Main_All_Models(
 DataCSV,
 partition,
@@ -63,20 +68,20 @@ ReportMultiPlot = TRUE,
 ComparisonPlot = TRUE
 )
 
-**LDL_ML_predict** function predicts and returns the estimated LDL Value, based on the previously trained model.\
-**Usage:**\
+LDL_ML_predict function predicts and returns the estimated LDL Value, based on the previously trained model.\
+Usage:
 LDL_ML_predict(model, data)
 
-**LDL_eq** function calculates and returns the LDL Value for any of the 12 equations.\
-**Usage:**\
+LDL_eq function calculates and returns the LDL Value for any of the 12 equations.\
+Usage:
 LDL_eq(TC, HDL, TG, EqMethod)
 
-**LDLallEq** function calculates and returns the LDL values calculated with all of the 12 named equations.\
-**Usage:**\
+LDLallEq function calculates and returns the LDL values calculated with all of the 12 named equations.\
+Usage:
 LDLallEq(TC, HDL, TG)
 
-**Corr_Plot** function plots a correlation plot to depict the correlation between different columns of your data.\
-**Usage:**\
+Corr_Plot function plots a correlation plot to depict the correlation between different columns of your data.\
+Usage:
 Corr_Plot(listDaten)
 
 
@@ -109,7 +114,7 @@ TC: The TC (Total Cholesterol) value.
 HDL: The HDL (High-density lipoprotein- cholesterol) value.
 TG: The TG (Triglyceride) value.
 EqMethod: The type of equation to be used to calculate the LDL value.The type of equation to be used to calculate the LDL value. EqMethod could be ("Friedewald","Ahmadi","Chen","Anandaraja","NewFormula","deCordova","Vujovic","Hattori","Puavillai","Hatta","Martin180","Martin360","Martin2000","DeLong" or "Rao")
-
+```
 
 A full documentation is available here: [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf).
 
