@@ -12,7 +12,7 @@ Currently, there is no R software package available for the calculation and pred
 
 # Installation Guides 
 
-1. Download and install:
+1. Download and install: 
 
     - R (https://www.r-project.org/)
     - R studio (https://www.rstudio.com/)
