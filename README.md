@@ -85,7 +85,7 @@ It initializes and returns the stacked algorithm prediction model with two avala
 ![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ReportMultiPlotStack.png?raw=true)
 ![ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ComparisonPlotStack.png)
 
-````
+```
 LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ReportMultiPlot and ComparisonPlot.
 Usage:
 LDL_ML_Main_All_Models(
@@ -115,7 +115,7 @@ stackPredictions=107.994
 allModelsPredictions=
  lm      |   rlm   |  glmnet |   earth  | svmRadial| knn |   gbm  | cubist  |   rf
 107.0817 | 106.8685| 107.0483| 106.9761 | 107.5802 | 111 |112.8338| 106.4204| 105.7671
-
+```
 
 LDL_eq function calculates and returns the LDL Value for any of the 12 equations.\
 Usage:
