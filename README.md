@@ -40,8 +40,9 @@ ls("package:LDLcalc")
 **Usage and Example**
 
 This R Package allows for a pre-trained model which is called ``model``, as well a ``sample data``, thus enabling the user to have a first experience with our  R package.
+
+Arguments for the functions ``LDL_ML_Main``, ``LDL_ML_Main_StackingAlgorithm``, ``LDL_ML_Main_All_Models``
 ```
-Arguments for the functions LDL_ML_Main, LDL_ML_Main_StackingAlgorithm, LDL_ML_Main_All_Models
 DataCSV: 
 The .csv or data table file, path containing the data with which the model will be
 trained and assessed. Must contain at least 4 columns, named "CHOL", "HDL",
@@ -116,9 +117,9 @@ allModelsPredictions=
  lm      |   rlm   |  glmnet |   earth  | svmRadial| knn |   gbm  | cubist  |   rf
 107.0817 | 106.8685| 107.0483| 106.9761 | 107.5802 | 111 |112.8338| 106.4204| 105.7671
 ```
-```
-Arguments for LDL_eq & LDLallEq  :
 
+Arguments for ``LDL_eq`` & ``LDLallEq``  :
+```
 TC: The TC (Total Cholesterol) value.
 HDL: The HDL (High-density lipoprotein- cholesterol) value.
 TG: The TG (Triglyceride) value.
@@ -156,11 +157,13 @@ Results:The calculated LDL values, according to all the equations.
 "DeLong = 107.38"
 "Rao = 103.22375"
 ```
+Arguments for the ``Corr_Plot`` function:
+```
+listDaten:
+This is a list of the data amongst which one can see the correlation. One needs to provide at 
+least two columns of equal length in order to see the correlation between them
 ```
 Corr_Plot function plots a correlation plot to depict the correlation between different columns of your data.
-Arguments
-listDaten This is a list of the data amongst which one can see the correlation. One needs to provide at 
-least two columns of equal length in order to see the correlation between them
 Usage:
 Corr_Plot(listDaten)
 Example:
