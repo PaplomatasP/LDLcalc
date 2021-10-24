@@ -44,18 +44,15 @@ This R Package allows for a pre-trained model which is called ``model``, as well
 Arguments for the functions ``LDL_ML_Main``, ``LDL_ML_Main_StackingAlgorithm``, ``LDL_ML_Main_All_Models``
 ```
 DataCSV: 
-The .csv or data table file, path containing the data with which the model will be
-trained and assessed. Must contain at least 4 columns, named "CHOL", "HDL",
-"TG" and "LDLd", through which the train data and the validation data will be extracted.
-partition: A value in the range (0,1) that stipulates what percentage of the input data will
-be used for training the model, while the remainder will be used to assess it.
+The .csv or data table file, path containing the data with which the model will be trained and assessed. Must contain at least 4 columns, named "CHOL", "HDL",
+"TG" and "LDLd", through which the train data and the validation data will be extracted. 
+partition: 
+A value in the range (0,1) that stipulates what percentage of the input data will be used for training the model, while the remainder will be used to assess it.
 ReportMultiPlot:
-A boolean that allows the user to select whether the LDL_ML_Main function
-will plot a diagram with 5 plots, relating different stats on the newly created
+A boolean that allows the user to select whether the LDL_ML_Main function will plot a diagram with 5 plots, relating different stats on the newly created
 model. Preset to TRUE.
 ComparisonPlot: 
-A boolean that allows the user to select whether the LDL_ML_Main_All_Models
-function will plot a comparison plot, relating different stats on the newly created
+A boolean that allows the user to select whether the LDL_ML_Main_All_Models function will plot a comparison plot, relating different stats on the newly created
 models. Preset to TRUE
 ```
 ```
