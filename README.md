@@ -39,7 +39,7 @@ ls("package:LDLcalc")
 ```
 **Usage and Example**
 
-This R Package allows for a pre-trained model which is called **model**, as well a **sample data**, thus enabling the user to have a first experience with our  R package.
+This R Package allows for a pre-trained model which is called ``model``, as well a ``sample data``, thus enabling the user to have a first experience with our  R package.
 ```
 Arguments for the functions LDL_ML_Main, LDL_ML_Main_StackingAlgorithm, LDL_ML_Main_All_Models
 DataCSV: 
