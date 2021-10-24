@@ -123,7 +123,7 @@ To install ``LDLcalc`` use :
 ```diff
 ! LDL_ML_predict(model,data.table(CHOL=170.5,HDL=35.12,TG=175))
 
-#> 107.5539
+#> 107.5539 
 ```
 
 
