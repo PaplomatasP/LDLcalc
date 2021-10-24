@@ -37,6 +37,7 @@ ls("package:LDLcalc")
 [7] "LDLallEq" "model" 
 [9] "SampleData
 ```
+```
 **Usage and Example**
 ``LDL_eq`` Calculates and returns the LDL Value for any of the 12 different equations
 **Description:**
@@ -48,7 +49,7 @@ LDL_eq(TC, HDL, TG, EqMethod)
 **HDL:** The HDL (High-density lipoprotein- cholesterol) value.
 **TG:** The TG (Triglyceride) value.
 **EqMethod:** The type of equation to be used to calculate the LDL value.The type of equation to be used to calculate the LDL value. EqMethod could be ("Friedewald","Ahmadi","Chen","Anandaraja","NewFormula","deCordova","Vujovic","Hattori","Puavillai","Hatta","Martin180","Martin360","Martin2000","DeLong" or "Rao")
-
+```
 A full documentation is available here: [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf).
 
 Installation and examples are available either on [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf) or on [LDLcalctutorial](https://sciencesandresearch.com/wp-content/uploads/2021/10/LDLcalcTutorial-1.pdf).
