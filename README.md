@@ -24,7 +24,7 @@ install.packages("LDLcalc")
 ```
 # How-to Guides
 
-After the Installation you can see packages function :
+After the Installation you can see packages functions :
 ``` 
 library(LDLcalc)
 ls("package:LDLcalc")
@@ -162,6 +162,7 @@ Arguments for the ``Corr_Plot`` function:
 listDaten:
 This is a list of the data amongst which one can see the correlation. One needs to provide at 
 least two columns of equal length in order to see the correlation between them
+```
 ```
 Corr_Plot function plots a correlation plot to depict the correlation between different columns of your data.
 Usage:
