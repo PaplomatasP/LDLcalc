@@ -47,12 +47,25 @@ This function calculates and returns the LDL value computed from any of the 12 n
 Usage:
 LDL_eq(TC, HDL, TG, EqMethod)
 
-Arguments:
+Examples:
+LDL_eq(170.5,35.12,230,"Martin360")
 
-**TC:** The TC (Total Cholesterol) value.
-**HDL:** The HDL (High-density lipoprotein- cholesterol) value.
-**TG:** The TG (Triglyceride) value.
-**EqMethod:** The type of equation to be used to calculate the LDL value.The type of equation to be used to calculate the LDL value. EqMethod could be ("Friedewald","Ahmadi","Chen","Anandaraja","NewFormula","deCordova","Vujovic","Hattori","Puavillai","Hatta","Martin180","Martin360","Martin2000","DeLong" or "Rao")
+``LDLallEq`` Calculates and returns the LDL values using all available equation
+Description:
+This function calculates and returns the LDL values computed with all of the 12 named equations.
+
+Usage:
+LDLallEq(TC, HDL, TG)
+
+Examples
+LDLallEq(170,35,174)
+
+Arguments for LDL_eq & LDLallEq  :
+
+TC: The TC (Total Cholesterol) value.
+HDL: The HDL (High-density lipoprotein- cholesterol) value.
+TG: The TG (Triglyceride) value.
+EqMethod: The type of equation to be used to calculate the LDL value.The type of equation to be used to calculate the LDL value. EqMethod could be ("Friedewald","Ahmadi","Chen","Anandaraja","NewFormula","deCordova","Vujovic","Hattori","Puavillai","Hatta","Martin180","Martin360","Martin2000","DeLong" or "Rao")
 ```
 A full documentation is available here: [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf).
 
