@@ -40,7 +40,7 @@ ls("package:LDLcalc")
 **Usage and Example**
 
 This R Package allows for a pre-trained model which is called **model**, as well a **sample data**, thus enabling the user to have a first experience with our  R package.
-```
+```dif
 LDL_ML_Main function creates, trains, assesses and returns an ML prediction model, with the option for a ``ReportMultiPlot``.  This is a diagram with 5 plots, relating different stats on the newly created model. Default to TRUE.\
 Usage:
 LDL_ML_Main(DataCSV, partition, MLmethod, ReportMultiPlot = TRUE)
