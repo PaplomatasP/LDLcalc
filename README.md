@@ -6,7 +6,7 @@ A list of dependencies to install are : data.table, caret, caretEnsemble, lares,
 
 [Testdata-Script](https://github.com/PaplomatasP/LDLcalculation/tree/main/LDLcalc/tests)
 
-# Statement of need
+# Statement of need 
 
 Currently, there is no R software package available for the calculation and prediction of Low Density Lipoprotein Cholesterol (LDL) values either through equations or machine learning methods. LDL is implicated in many prevalent health problems, such as cardiovascular diseases. The accurate determination of LDL is of high cost and with technical difficulties (ultracentrifugation). The ``LDLcalc`` package offers a wide variety of ways to calculate or predict the LDL values of patients based on the values of three other metrics, that is Total Cholesterol (CHOL), Triglycerides (TG) and High Density Lipoproteins (HDL).
 
