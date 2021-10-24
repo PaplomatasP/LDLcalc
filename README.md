@@ -48,7 +48,8 @@ Example:
 model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 Results:
 It initializes and returns the ML prediction model with a Reportmultiplot if TRUE is choosen.
-![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png)
+![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png?raw=true)
+
 
 ```
 
