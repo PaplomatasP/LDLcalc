@@ -85,9 +85,8 @@ It initializes and returns the stacked algorithm prediction model with two avala
 ![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ReportMultiPlotStack.png?raw=true)
 ![ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ComparisonPlotStack.png)
 
-
-It initializes and returns the stacked algorithm prediction model w
-LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``.\
+````
+LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ReportMultiPlot and ComparisonPlot.
 Usage:
 LDL_ML_Main_All_Models(
 DataCSV,
@@ -95,10 +94,28 @@ partition,
 ReportMultiPlot = TRUE,
 ComparisonPlot = TRUE
 )
+Example:
+allModels = LDL_ML_Main_All_Models(SampleData,0.8,ReportMultiPlot = FALSE,ComparisonPlot=FALSE)
+Results:
+It initializes and returns all ML prediction models with two avalaible plots(like them above)
 
-LDL_ML_predict function predicts and returns the estimated LDL Value, based on the previously trained model.\
+LDL_ML_predict function predicts and returns the estimated LDL Value, based on the previously trained model.
+library(data.table)
 Usage:
 LDL_ML_predict(model, data)
+Examples:
+Three Examples to estimate the LDL from the three models, which is created above.
+modelPrediction = LDL_ML_predict(model,data.table::data.table(CHOL=170.5,HDL=35.12,TG=175))
+stackPredictions = LDL_ML_predict(stackModel,data.table::data.table(CHOL=170.5,HDL=35.12,TG=175))
+allModelsPredictions = LDL_ML_predict(allModels,data.table::data.table(CHOL=170.5,HDL=35.12,TG=175))
+Results:
+The predicted LDL value(s).
+modelPrediction=107.2315 
+stackPredictions=107.994 
+allModelsPredictions=
+ lm      |   rlm   |  glmnet |   earth  | svmRadial| knn |   gbm  | cubist  |   rf
+107.0817 | 106.8685| 107.0483| 106.9761 | 107.5802 | 111 |112.8338| 106.4204| 105.7671
+
 
 LDL_eq function calculates and returns the LDL Value for any of the 12 equations.\
 Usage:
