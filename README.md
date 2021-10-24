@@ -51,9 +51,8 @@ It initializes and returns the ML prediction model with a plot (see below) if Re
 ```
 ![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png?raw=true)
 
-
 ```
-LDL_ML_Main_StackingAlgorithm function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``. Default to TRUE.
+LDL_ML_Main_StackingAlgorithm function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a ReportMultiPlot and ComparisonPlot. Default to TRUE.
 Usage:
 LDL_ML_Main_StackingAlgorithm(
 DataCSV,
@@ -61,7 +60,15 @@ partition,
 ReportMultiPlot = TRUE,
 ComparisonPlot = TRUE
 ) 
+Example:
+stackModel = LDL_ML_Main_StackingAlgorithm(SampleData,0.8,ReportMultiPlot=TRUE,ComparisonPlot=TRUE)
+Results:
+It initializes and returns the stacked algorithm prediction model with two avalaible plots(see below):
+````
+![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ReportMultiPlotStack.png?raw=true)[ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ComparisonPlotStack.png)
 
+
+It initializes and returns the stacked algorithm prediction model w
 LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ``ReportMultiPlot`` and ``ComparisonPlot``.\
 Usage:
 LDL_ML_Main_All_Models(
