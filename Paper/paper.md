@@ -114,7 +114,7 @@ To install ``LDLcalc`` use :
 ! model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 ```
 
-![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalculation/blob/main/LDLcalc/Paper/ModelPlot.png?raw=true)
+![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png?raw=true)
 
 
 
