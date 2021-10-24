@@ -28,7 +28,7 @@ After the Installation you can see packages functions :
 ``` 
 library(LDLcalc)
 ls("package:LDLcalc")
-[1] "Corr_Plot" 
+[1] "Corr_Plot"  
 [2]"LDL_eq" 
 [3] "LDL_ML_Main" 
 [4]"LDL_ML_Main_All_Models" 
