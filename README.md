@@ -114,7 +114,7 @@ allModelsPredictions=
  lm      |   rlm   |  glmnet |   earth  | svmRadial| knn |   gbm  | cubist  |   rf
 107.0817 | 106.8685| 107.0483| 106.9761 | 107.5802 | 111 |112.8338| 106.4204| 105.7671
 ```
-
+ 
 Arguments for ``LDL_eq`` & ``LDLallEq``  :
 ```
 TC: The TC (Total Cholesterol) value.
