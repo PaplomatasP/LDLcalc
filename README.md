@@ -81,7 +81,7 @@ Results:
 It initializes and returns the stacked algorithm prediction model with two avalaible plots(see below):
 ````
 ![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ReportMultiPlotStack.png?raw=true)
-![ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ComparisonPlotStack.png)
+![ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/LDLcalcImages/ComparisonPlotStack.png)
 
 ```
 LDL_ML_Main_All_Models function creates, trains, assessess and returns  all ML prediction models with the option for a ReportMultiPlot and ComparisonPlot.
@@ -168,7 +168,7 @@ Example:
 Corr_Plot(SampleData[1:5])
 Results:No return value, it prints the requested diagram.
 ```
-![Correlation Plot between the selected columns](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/Corrplot.png)
+![Correlation Plot between the selected columns](https://github.com/PaplomatasP/LDLcalc/blob/main/LDLcalcImages/Corrplot.png)
 
 
 A full documentation is available here: [Reference manual](https://cran.r-project.org/web/packages/LDLcalc/LDLcalc.pdf).
