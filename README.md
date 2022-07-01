@@ -64,7 +64,7 @@ model = LDL_ML_Main(SampleData,0.7,"lm",ReportMultiPlot=TRUE)
 Results:
 It initializes and returns the ML prediction model with a plot (see below) if Reportmultiplot=TRUE.
 ```
-![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ModelPlot.png?raw=true)
+![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/LDLcalcImages/ModelPlot.png?raw=true)
 
 ```
 LDL_ML_Main_StackingAlgorithm function creates, trains, assesses and returns a Stacking Algorithm Machine learning prediction model with the option for a ReportMultiPlot and ComparisonPlot. Default to TRUE.
