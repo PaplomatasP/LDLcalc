@@ -80,7 +80,7 @@ stackModel = LDL_ML_Main_StackingAlgorithm(SampleData,0.8,ReportMultiPlot=TRUE,C
 Results:
 It initializes and returns the stacked algorithm prediction model with two avalaible plots(see below):
 ````
-![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/Paper/ReportMultiPlotStack.png?raw=true)
+![Plot of the trained model which provided insightful information about the accuracy of it.](https://github.com/PaplomatasP/LDLcalc/blob/main/LDLcalcImages/ReportMultiPlotStack.png?raw=true)
 ![ComparisonPLot](https://github.com/PaplomatasP/LDLcalc/blob/main/LDLcalcImages/ComparisonPlotStack.png)
 
 ```
