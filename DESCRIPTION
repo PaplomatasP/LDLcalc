@@ -1,6 +1,6 @@
 Package: LDLcalc
 Title: Calculate and Predict the Low Density Lipoprotein Values 
-Version: 2.0
+Version: 2.1
 Authors@R: c(person("Petros", "Paplomatas", role = c("aut", "cre"),
                      email = "P.paplomatas@hotmail.com"),
               person("Kostas", "Anagnostopoulos", role = c("aut"),
@@ -9,11 +9,10 @@ Author: Petros Paplomatas [aut, cre],
   Kostas Anagnostopoulos [aut]
 Description: A wide variety of ways to calculate (through equations) or predict (using 9 Machine learning methods as well as a stack algorithm combination of them all) the Low Density Lipoprotein values of patients based on the values of three other metrics, namely Total Cholesterol , Triglycerides and High Density Lipoprotein. It can also calculate the variance of LDL and the Atherogenic Index of Plasma (AIP) using error propagation and bootstrapping.
 License: GPL-3
-URL: https://sciencesandresearch.com/ldlcalc-calculate-and-predict-the-low-density-lipoprotein-values ,https://sciencesandresearch.com/ldlcalctutorial
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.3.0
 Imports:
 	data.table,
 	caret,
@@ -26,8 +25,7 @@ Imports:
 	moments,
 	ggplot2,
 	janitor,
-	philentropy,
-	sets
+	philentropy
 Depends: 
     R (>= 3.5.0)
 Suggests: 

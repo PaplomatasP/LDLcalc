@@ -45,6 +45,7 @@ AIP_HDLVrnc <- function(dfHDL, TG, SI=TRUE, bootStrpReps=2000) {
     AIPVrncChangingBootVrnc[i] = AIPVrncBoot$Var
     setTxtProgressBar(pb, i)
   }
+  close(pb)
   return(list(ErrPropVrnc = AIPVrncChangingErrPropVrnc,
               ErrPropVrnc2Ord = AIPVrnc2OrdChangingErrPropVrnc,
               BootVrnc = AIPVrncChangingBootVrnc))
@@ -98,6 +99,7 @@ AIP_TGVrnc <- function(dfTG, HDL, SI=TRUE, bootStrpReps=2000) {
     AIPVrncChangingBootVrnc[i] = AIPVrncBoot$Var
     setTxtProgressBar(pb, i)
   }
+  close(pb)
   return(list(ErrPropVrnc = AIPVrncChangingErrPropVrnc,
               ErrPropVrnc2Ord = AIPVrnc2OrdChangingErrPropVrnc,
               BootVrnc = AIPVrncChangingBootVrnc))
