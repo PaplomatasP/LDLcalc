@@ -29,25 +29,25 @@ LDLbootVrnc <- function(CHOL, HDL, TG, sampleSize=length(CHOL), noOfReps=1000, p
     print("The three parameters must have the same number of measurements")
     return(NULL)
   }
-
+  
   n <- length(CHOL)
   if(sampleSize > n) {
     print("Size of bootstrapped datasets cannot be larger than the original. Setting sampleSize to n")
     sampleSize <- n
   }
-
+  
   dfTmp <- data.frame(CHOL, HDL, TG) # Simplified data frame creation
-
+  
   # Define CV function
   CV <- function(x) {
     if(mean(x) == 0) return(NA) # Avoid division by zero
     sd(x) / mean(x)
   }
-
+  
   resultsList <- list() # Initialize list to store results
-
+  
   if(pb) pbar <- txtProgressBar(min = 0, max = noOfReps, style = 3)
-
+  
   for(bootIdx in 1:noOfReps) {
     dfSmpl <- dfTmp[sample(nrow(dfTmp), size=sampleSize, replace = TRUE),]
     dfLDLSmpl <- dfSmpl$CHOL - dfSmpl$HDL - (dfSmpl$TG / 5)
@@ -55,20 +55,18 @@ LDLbootVrnc <- function(CHOL, HDL, TG, sampleSize=length(CHOL), noOfReps=1000, p
     LDLSmplMedian <- median(dfLDLSmpl)
     LDLSmplVar <- var(dfLDLSmpl)
     LDLSmplCV <- CV(dfLDLSmpl)
-
+    
     resultsList[[bootIdx]] <- list(Mean = LDLSmplMean, Median = LDLSmplMedian, Var = LDLSmplVar, CV = LDLSmplCV)
-
+    
     if(pb) setTxtProgressBar(pbar, bootIdx)
   }
-
-  close(pb)
-
+  
   # Convert results list to data.table
   dtLDLBoot <- data.table::rbindlist(resultsList)
-
+  
   # Set column names
   stats::setNames(dtLDLBoot, c("Mean", "Median", "Var", "CV"))
-
+  
   return(list("dataTable" = dtLDLBoot, "Mean" = median(dtLDLBoot$Mean),
               "Var" = median(dtLDLBoot$Var), "CV" = median(dtLDLBoot$CV)))
 }
@@ -133,7 +131,6 @@ LDLErrPrp <- function(CHOL, HDL, TG, divFactor=5) {
     LDLVrncChangingBootVrnc[i] = LDLVrncBoot$Var
     setTxtProgressBar(pb, i)
   }
-  close(pb)
   return(list(ErrPropVrnc = LDLVrncChangingErrPropVrnc, BootVrnc = LDLVrncChangingBootVrnc))
 }
 
@@ -175,7 +172,6 @@ LDL_HDLVrnc <- function(dfHDL, CHOL, TG, bootStrpReps=2000) {
     LDLVrncChangingBootVrnc[i] = LDLVrncBoot$Var
     setTxtProgressBar(pb, i)
   }
-  close(pb)
   return(list(ErrPropVrnc = LDLVrncChangingErrPropVrnc, BootVrnc = LDLVrncChangingBootVrnc))
 }
 
@@ -217,7 +213,6 @@ LDL_TGVrnc <- function(dfTG, CHOL, HDL, bootStrpReps=2000) {
     LDLVrncChangingBootVrnc[i] = LDLVrncBoot$Var
     setTxtProgressBar(pb, i)
   }
-  close(pb)
   return(list(ErrPropVrnc = LDLVrncChangingErrPropVrnc, BootVrnc = LDLVrncChangingBootVrnc))
 }
 

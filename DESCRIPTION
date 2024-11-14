@@ -1,6 +1,6 @@
 Package: LDLcalc
-Title: Calculate and Predict the Low Density Lipoprotein Values 
-Version: 2.1
+Title: Calculate and Predict the Low Density Lipoprotein Values
+Version: 2.2
 Authors@R: c(person("Petros", "Paplomatas", role = c("aut", "cre"),
                      email = "P.paplomatas@hotmail.com"),
               person("Kostas", "Anagnostopoulos", role = c("aut"),
@@ -11,34 +11,17 @@ Description: A wide variety of ways to calculate (through equations) or predict 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.0
-Imports:
-	data.table,
-	caret,
-	caretEnsemble,
-	lares,
-	corrplot,
-	RColorBrewer,
-	lattice,
-	resample,
-	moments,
-	ggplot2,
-	janitor,
-	philentropy
-Depends: 
-    R (>= 3.5.0)
-Suggests: 
-    rmarkdown,
-    knitr,
-    Cubist,
-    earth,
-    gbm,
-    glmnet,
-    gridExtra,
-    kernlab,
-    randomForest,
-    tidyr,
-    testthat (>= 3.0.0)
+Imports: data.table, caret, caretEnsemble, lares, corrplot,
+        RColorBrewer, lattice, resample, moments, ggplot2, janitor,
+        philentropy
+Depends: R (>= 3.5.0)
+Suggests: rmarkdown, knitr, Cubist, earth, gbm, glmnet, gridExtra,
+        kernlab, randomForest, tidyr, testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-02-11 08:25:19 UTC; ppapl
+Maintainer: Petros Paplomatas <P.paplomatas@hotmail.com>
+Repository: CRAN
+Date/Publication: 2024-02-11 09:00:02 UTC

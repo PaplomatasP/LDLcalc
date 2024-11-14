@@ -65,7 +65,7 @@ LDL_ML_Main_StackingAlgorithm<-function(DataCSV, partition, ReportMultiPlot =TRU
   stackAlgPredictions = LDL_ML_predict(stackAlgModel,validationData)
 
   if (ReportMultiPlot == TRUE){
-    ReportMultiPlot(stackAlgPredictions,validationData$LDLd, "Stacking Algorithm Model")
+    ReportMultiPlot(stackAlgPredictions$pred,validationData$LDLd, "Stacking Algorithm Model")
   }
   if (ComparisonPlot == TRUE){
     a = Comparison_Models_Plot(results)
