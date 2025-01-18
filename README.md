@@ -21,6 +21,7 @@ Currently, there is no R software package available for the calculation and pred
 
 ```
 install.packages("LDLcalc")
+devtools::install_github("PaplomatasP/LDLcalc")
 ```
 # How-to Guides
 
